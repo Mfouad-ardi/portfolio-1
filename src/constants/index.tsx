@@ -10,29 +10,21 @@ export const myProjects = [
       "Designed a responsive frontend with Tailwind CSS, enhancing user experience.",
       "Added payment systems, localization, and product filtering for functionality improvements.",
     ],
-    href: "",
+    href: "https://www.google.com/",
     logo: "",
     image: "/assets/projects/accessories.jpg",
     tags: [
       {
         id: 1,
-        name: "C#",
-        path: "/assets/logos/csharp.svg",
+        name: "csharp",
       },
       {
         id: 2,
-        name: ".Net",
-        path: "/assets/logos/dotnet.svg",
-      },
-      {
-        id: 3,
-        name: "Ef Core",
-        path: "/assets/logos/efcore.png",
+        name: "dotnetcore",
       },
       {
         id: 4,
-        name: "TailwindCSS",
-        path: "/assets/logos/tailwindcss.svg",
+        name: "tailwindcss",
       },
     ],
   },
@@ -53,23 +45,19 @@ export const myProjects = [
     tags: [
       {
         id: 1,
-        name: "Auth0",
-        path: "/assets/logos/auth0.svg",
+        name: "oauth",
       },
       {
         id: 2,
-        name: "React",
-        path: "/assets/logos/react.svg",
+        name: "react",
       },
       {
         id: 3,
-        name: "SQLite",
-        path: "/assets/logos/sqlite.svg",
+        name: "sqlite",
       },
       {
         id: 4,
-        name: "TailwindCSS",
-        path: "/assets/logos/tailwindcss.svg",
+        name: "tailwindcss",
       },
     ],
   },
@@ -90,23 +78,19 @@ export const myProjects = [
     tags: [
       {
         id: 1,
-        name: "Blazor",
-        path: "/assets/logos/blazor.svg",
+        name: "blazor",
       },
       {
         id: 2,
-        name: ".NET Core",
-        path: "/assets/logos/dotnetcore.svg",
+        name: "dotnetore",
       },
       {
         id: 3,
-        name: "SQLite",
-        path: "/assets/logos/sqlite.svg",
+        name: "sqlite",
       },
       {
         id: 4,
-        name: "TailwindCSS",
-        path: "/assets/logos/tailwindcss.svg",
+        name: "tailwindcss",
       },
     ],
   },
@@ -127,23 +111,19 @@ export const myProjects = [
     tags: [
       {
         id: 1,
-        name: "C++",
-        path: "/assets/logos/cplusplus.svg",
+        name: "cplusplus",
       },
       {
         id: 2,
-        name: "C#",
-        path: "/assets/logos/csharp.svg",
+        name: "csharp",
       },
       {
         id: 3,
-        name: "Git",
-        path: "/assets/logos/git.svg",
+        name: "git",
       },
       {
         id: 4,
-        name: "Microsoft",
-        path: "/assets/logos/microsoft.svg",
+        name: "microsoft",
       },
     ],
   },
@@ -164,23 +144,19 @@ export const myProjects = [
     tags: [
       {
         id: 1,
-        name: "WordPress",
-        path: "/assets/logos/wordpress.svg",
+        name: "wordpress",
       },
       {
         id: 2,
-        name: "HTML5",
-        path: "/assets/logos/html5.svg",
+        name: "html5",
       },
       {
         id: 3,
-        name: "CSS3",
-        path: "/assets/logos/css3.svg",
+        name: "css3",
       },
       {
         id: 4,
-        name: "Vite.js",
-        path: "/assets/logos/vitejs.svg",
+        name: "vitejs",
       },
     ],
   },
@@ -201,23 +177,19 @@ export const myProjects = [
     tags: [
       {
         id: 1,
-        name: "Blazor",
-        path: "/assets/logos/blazor.svg",
+        name: "blazor",
       },
       {
         id: 2,
-        name: "Azure",
-        path: "/assets/logos/azure.svg",
+        name: "azure",
       },
       {
         id: 3,
-        name: "Stripe",
-        path: "/assets/logos/stripe.svg",
+        name: "stripe",
       },
       {
         id: 4,
-        name: "TailwindCSS",
-        path: "/assets/logos/tailwindcss.svg",
+        name: "tailwindcss",
       },
     ],
   },
@@ -225,19 +197,16 @@ export const myProjects = [
 
 export const mySocials = [
   {
-    name: "WhatsApp",
+    name: "whatsApp",
     href: "",
-    icon: "/assets/socials/whatsApp.svg",
   },
   {
-    name: "Linkedin",
+    name: "linkedin",
     href: "https://www.linkedin.com/in/ali-sanati/",
-    icon: "/assets/socials/linkedIn.svg",
   },
   {
-    name: "Instagram",
+    name: "instagram",
     href: "https://www.instagram.com/ali.sanatidev/reels/",
-    icon: "/assets/socials/instagram.svg",
   },
 ];
 
