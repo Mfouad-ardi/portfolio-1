@@ -53,6 +53,7 @@ export function Frameworks() {
   const skills = Object.keys(skillIcons)
   return (
     <div className="relative flex h-60 w-full flex-col items-center justify-center">
+      
       <OrbitingCircles iconSize={40}>
         {skills.map((skill, index) => (
           <Icon fontSize={40} key={index} icon={"devicon:" + skillIcons[skill]} />

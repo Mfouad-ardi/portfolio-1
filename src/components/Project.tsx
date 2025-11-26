@@ -1,21 +1,51 @@
+import { useState } from "react";
 import { ArrowRight } from "lucide-react";
+import ProjectDetails from "./ProjectDetails";
 
-const Project = () =>{
+const Project = ({ title, description, subDescription, href, image, tags, setPreview }) => {
+    // State to control the modal's visibility
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    
+    const openModal = () => setIsModalOpen(true);
+    const closeModal = () => setIsModalOpen(false);
+
     return (
-        <div className="flex-wrap items-center py-10 justify-baseline
-        space-y-14 sm:flex sm:space-y-0">
-            <p className="text-2xl">title</p>
-            <div className="flex gap-5 mt-2 text-sand">
-                <span>tag1</span>
-                <span>tag2</span>
-                <span>tag3</span>
+        <>
+            <div 
+                className="flex-wrap items-center py-10 justify-between space-y-14 sm:flex sm:space-y-0" 
+                onMouseEnter={() => setPreview(image)} 
+                onMouseLeave={() => setPreview(null)}
+            >
+                <div>
+                    <p className="text-2xl">{title}</p>
+                    <div className="flex gap-5 mt-2 text-sand">
+                        {tags.map((tag) => (
+                            <span key={tag.id}>{tag.name}</span>
+                        ))}
+                    </div>
+                </div>
+                <button onClick={openModal} className="flex items-center gap-1 cursor-pointer hover-animation">
+                    Read More
+                    <ArrowRight />
+                </button>
             </div>
-            <button className="">
-                Read More
-                <ArrowRight />
-            </button>
-        </div>
+            
+            <div className="bg-linear-to-r from-transparent via-neutral-700 h-px w-full" />
+            
+            {/* Conditionally render the modal */}
+            {isModalOpen && (
+                <ProjectDetails
+                    title={title}
+                    description={description}
+                    subDescription={subDescription}
+                    href={href}
+                    image={image}
+                    tags={tags}
+                    onClose={closeModal} // Pass the close function to the modal
+                />
+            )}
+        </>
     );
-}
+};
 
 export default Project;
