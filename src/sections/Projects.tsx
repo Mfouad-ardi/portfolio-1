@@ -30,6 +30,7 @@ const Projects = () => {
 
     return (
         <section 
+            id="work"
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
             className="relative c-space section-spacing"
@@ -37,7 +38,7 @@ const Projects = () => {
             <h2 className="text-heading">My Selected Projects</h2>
             
             {/* FIX: Corrected the invalid Tailwind class name */}
-            <div className="bg-gradient-to-r from-transparent via-neutral-700 to-transparent mt-12 h-px w-full" />
+            <div className="bg-linear-to-r from-transparent via-neutral-700 to-transparent mt-12 h-px w-full" />
             
             <div className="mt-12">
                 {myProjects.map((project) => (

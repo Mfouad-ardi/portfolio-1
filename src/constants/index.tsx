@@ -198,15 +198,19 @@ export const myProjects = [
 export const mySocials = [
   {
     name: "whatsApp",
-    href: "",
+    href: "tel:+212698070208",
   },
   {
     name: "linkedin",
-    href: "https://www.linkedin.com/in/ali-sanati/",
+    href: "https://www.linkedin.com/in/fouad-mardi/",
+  },
+  {
+    name: "github",
+    href: "https://github.com/Mfouad-ardi",
   },
   {
     name: "instagram",
-    href: "https://www.instagram.com/ali.sanatidev/reels/",
+    href: "https://www.instagram.com/fouad.mardii",
   },
 ];
 

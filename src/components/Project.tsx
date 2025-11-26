@@ -14,7 +14,6 @@ const Project = ({ title, description, subDescription, href, image, tags, setPre
             <div 
                 className="flex-wrap items-center py-10 justify-between space-y-14 sm:flex sm:space-y-0" 
                 onMouseEnter={() => setPreview(image)} 
-                // FIX 1: Corrected the onMouseLeave handler
                 onMouseLeave={() => setPreview(null)}
             >
                 <div>
@@ -25,15 +24,13 @@ const Project = ({ title, description, subDescription, href, image, tags, setPre
                         ))}
                     </div>
                 </div>
-                {/* This button now opens the modal */}
                 <button onClick={openModal} className="flex items-center gap-1 cursor-pointer hover-animation">
                     Read More
                     <ArrowRight />
                 </button>
             </div>
             
-            {/* FIX 2: Corrected the invalid Tailwind class name */}
-            <div className="bg-gradient-to-r from-transparent via-neutral-700 h-px w-full" />
+            <div className="bg-linear-to-r from-transparent via-neutral-700 h-px w-full" />
             
             {/* Conditionally render the modal */}
             {isModalOpen && (
